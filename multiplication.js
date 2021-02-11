@@ -11,4 +11,3 @@ function multiplyNumber(n) {
         console.log(row);
     }
 }
-
