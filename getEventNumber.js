@@ -1,3 +1,5 @@
+// Get Event Numbers from an arry
+
 function getPositive(arr) {
     var positiveNumber = []
     for (let i = 0; i < arr.length; i++) {
