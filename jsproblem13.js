@@ -11,6 +11,6 @@ function findMax(arr) {
     return maxNumber;
 }
 
-var myNumbers = [1, 2, 3, 4, 9, 10, 15, 90];
+var myNumbers = [1, 2, 3, 4, 9, 10, 15];
 var result = findMax(myNumbers);
 console.log(result);
