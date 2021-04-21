@@ -11,6 +11,6 @@ function sumDigits(n) {
     return sum
 }
 
-const sum = sumDigits(123456789)
+const sum = sumDigits(1234567)
 
 console.log(sum);
