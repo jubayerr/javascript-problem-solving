@@ -30,5 +30,5 @@ function getPrime(n) {
     return true;
 }
 
-const isPrime = getPrime(19)
+const isPrime = getPrime(13)
 console.log(isPrime);
