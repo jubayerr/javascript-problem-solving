@@ -10,7 +10,7 @@ function averageNumber(arr) {
     return average / arr.length;
 }
 
-let myNumbers = [2, 3, 5, 7, 9, 10, 15, 95];
+let myNumbers = [2, 4, 6, 8, 10, 12, 14];
 
 let result = averageNumber(myNumbers)
 
