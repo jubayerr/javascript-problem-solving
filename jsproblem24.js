@@ -6,13 +6,13 @@ const numbers2 = [7, 8, 4, 5, 10]
 const mergeArray = (num1, num2) => {
     let numbers3 = []
 
-    for (let i = 0; i < numbers1.length; i++) {
-        const element = numbers1[i];
+    for (let i = 0; i < num1.length; i++) {
+        const element = num1[i];
         numbers3.push(element)
     }
 
-    for (let index = 0; index < numbers2.length; index++) {
-        const element = numbers2[index];
+    for (let index = 0; index < num2.length; index++) {
+        const element = num2[index];
         numbers3.push(element)
     }
     return numbers3
