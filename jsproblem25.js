@@ -8,6 +8,19 @@ const mergeExclusive = (num1, num2) => {
 
     for (let index = 0; index < num1.length; index++) {
         const element = num1[index];
-
+        if (!num2.includes(element)) {
+            exclusive.push(element)
+        }
     }
+    for (let index = 0; index < num2.length; index++) {
+        const element = num2[index];
+        if (!num1.includes(element)) {
+            exclusive.push(element)
+        }
+    }
+    return exclusive
 }
+
+const numbers3 = mergeExclusive(numbers1, numbers2)
+
+console.log(numbers3);
