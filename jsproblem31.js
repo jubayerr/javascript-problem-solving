@@ -1,4 +1,4 @@
-// Counting Word
+// rough
 
 function countingWord(n) {
 
@@ -13,11 +13,6 @@ function countingWord(n) {
     return totalWord
 }
 
-
-
-const sentence = 'hello! Welcome to the new world!'
+const sentence = 'the kid is not my son!'
 const result = countingWord(sentence)
-console.log(result)
-
-
-
+console.log(result);
