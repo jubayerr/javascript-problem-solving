@@ -1,18 +1,15 @@
-// rough
+// reverse string
 
-function countingWord(n) {
-
-    totalWord = 0
-
-    for (let i = 0; i < n.length; i++) {
-        const el = n[i];
-        if (el == ' ' && n[i-1] != ' ') {
-            totalWord++
-        }
+function reverseText(str) {
+    var reversed = ''
+    for (let i = 0; i < str.length; i++) {
+        const text = str[i];
+        reversed = text + reversed
     }
-    return totalWord
+    return reversed
 }
 
-const sentence = 'the kid is not my son!'
-const result = countingWord(sentence)
-console.log(result);
+var statement = "Hello from the other side"
+var result = reverseText(statement)
+
+console.log(result)
