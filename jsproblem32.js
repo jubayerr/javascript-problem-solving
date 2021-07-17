@@ -1,6 +1,6 @@
 // rough
 
-const sentence = 'the kid is not my son!'
+const sentence = 'she said I am the one. but the kid is not my son!'
 const result = countingWord(sentence)
 console.log(result)
 
