@@ -5,11 +5,24 @@ const result = countingWord(sentence)
 console.log(result)
 
 
+// function countingWord(n) {
+//     var totalWord = 0
+//     for (let i = 0; i < n.length; i++) {
+//         const el = n[i];
+//         if (el == ' ' && n[i-1] != ' ') {
+//             totalWord++
+//         }
+//     }
+//     return totalWord
+// }
+
+
+
 function countingWord(n) {
-    var totalWord = 0
+    let totalWord = 0
     for (let i = 0; i < n.length; i++) {
-        const el = n[i];
-        if (el == ' ' && n[i-1] != ' ') {
+        const element = n[i];
+        if (element == ' ' && n[i-1] != ' ') {
             totalWord++
         }
     }
