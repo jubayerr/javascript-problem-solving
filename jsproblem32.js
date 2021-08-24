@@ -1,30 +1,22 @@
-// rough
+// Shuffle an array
 
-const sentence = 'she said I am the one. but the kid is not my son!'
-const result = countingWord(sentence)
-console.log(result)
+const animal = ["dog", "cat", "rat", "fox", "cow"];
 
+const shuffle = (array) => {
+  var currentIndex = array.length,
+    randomIndex;
 
-// function countingWord(n) {
-//     var totalWord = 0
-//     for (let i = 0; i < n.length; i++) {
-//         const el = n[i];
-//         if (el == ' ' && n[i-1] != ' ') {
-//             totalWord++
-//         }
-//     }
-//     return totalWord
-// }
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+  return array;
+};
 
+const shuffled = shuffle(animal);
 
-
-function countingWord(n) {
-    let totalWord = 0
-    for (let i = 0; i < n.length; i++) {
-        const element = n[i];
-        if (element == ' ' && n[i-1] != ' ') {
-            totalWord++
-        }
-    }
-    return totalWord
-}
+console.log(shuffled);
